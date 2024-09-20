@@ -17,7 +17,7 @@ table, th, td {
 th, td {
     padding: 10px;
 }
-b{
+h1{
     font-size: 1em;
     letter-spacing: 10px;
     text-shadow: 0 0 10px cyan;
@@ -33,7 +33,3 @@ b{
     background-color: black;
 }
 
-h1 {
-    margin: 0%;
-    padding:0%;
-}
