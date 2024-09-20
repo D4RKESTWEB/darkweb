@@ -28,7 +28,7 @@ function checkRows() {
     if (allFilled) {
         addNewRow();
     }
-    
+
     if (allEmpty && rows.length > 2) {
         table.deleteRow(rows.length - 1);
     }
@@ -55,3 +55,28 @@ function addNewRow() {
 
     tableBody.appendChild(newRow);
 }
+function saveUserInfo() {
+    const table = document.getElementById('inputTable');
+    const rows = table.getElementsByTagName('tr');
+    let userData = [];
+
+    for (let i = 1; i < rows.length; i++) { // start from 1 to skip the header row
+        let name = rows[i].querySelector('input[name="name"]').value;
+        let age = rows[i].querySelector('input[name="age"]').value;
+        let sex = rows[i].querySelector('select[name="sex"]').value;
+        let email = rows[i].querySelector('input[name="email"]').value;
+        let phone = rows[i].querySelector('input[name="phone"]').value;
+
+        userData.push({ name, age, sex, email, phone });
+    }
+
+    // Save to localStorage (or send to server)
+    localStorage.setItem('userInfo', JSON.stringify(userData));
+
+    alert("User information saved successfully!");
+}
+function getUserInfo() {
+    const savedData = JSON.parse(localStorage.getItem('userInfo'));
+    console.log(savedData); // You can use this to display the data
+}
+
