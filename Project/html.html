@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bluehat.png" type="image/x-icon">
+    <title>DarkWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>
+        <b>
+            DARKWEB
+        </b>
+    </h1>
+    <table id="inputTable" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="name" placeholder="Enter Name" oninput="checkRows()"></td>
+                <td><input type="number" name="age" placeholder="Enter Age" oninput="checkRows()"></td>
+                <td>
+                    <select name="sex" oninput="checkRows()">
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td><input type="email" name="email" placeholder="Enter Email" oninput="checkRows()"></td>
+                <td><input type="tel" name="phone" placeholder="Enter Phone Number" oninput="checkRows()"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
