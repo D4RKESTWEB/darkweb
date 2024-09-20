@@ -18,12 +18,12 @@ th, td {
     padding: 10px;
 }
 h1{
-    font-size: 1em;
-    letter-spacing: 10px;
-    text-shadow: 0 0 10px cyan;
+    font-size: 5em;
+    letter-spacing: 5px;
     text-shadow: 0 0 20px cyan;
-    text-shadow: 0 0 40px cyan;
-    text-shadow: 0 0 80px cyan;
+    text-shadow: 0 0 30px cyan;
+    text-shadow: 0 0 50px cyan;
+    text-shadow: 0 0 90px cyan;
     text-transform: uppercase;
     margin: 0%;
     padding: 0%;
@@ -32,4 +32,3 @@ h1{
     color: white;
     background-color: black;
 }
-
